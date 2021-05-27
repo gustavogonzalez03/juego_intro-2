@@ -18,10 +18,19 @@ public class Bullet extends Actor
         destroy();
         
     }    
+    
+    /*
+     
+     */
     public void moving()
     {
         setLocation(getX(),getY()-3);        
     }
+    
+    /*
+     La funcion destroy() evita que la bala se quede en la orilla del
+     mapa en caso de no hacer contacto con un alien
+     */
     public void destroy()
     {
         if (getY() == 0)
@@ -33,6 +42,11 @@ public class Bullet extends Actor
             kill();
         }
     }
+    
+    /*
+     La funcion kill elimina al alien y a la bala cuando estos entran
+     en contacto
+     */
     public void kill()
     {        
         Actor alien;

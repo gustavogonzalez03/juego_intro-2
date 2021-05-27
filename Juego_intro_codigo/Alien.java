@@ -8,23 +8,24 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Alien extends Actor
 {
-    /**
-     * Act - do whatever the Alien wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    
+    public int x = 4;    // Nunero entero para la funcion move
     public void act() 
-    {
-        /*destroy();*/
+    {    
+         moving();  
     }        
-    public void destroy()
+    
+    /**
+     La funcion moving() hace que los aliens reboten en cada esquina del 
+     juego
+     */
+    
+    public void moving()
     {
-        Actor bullet;
-        bullet = getOneObjectAtOffset(0,0,Bullet.class);
-        if(bullet != null)
+        if (getX() == 599 || getX() == 0 )
         {
-            World world;
-            world = getWorld();            
-            world.removeObject(this);                
+        x = x * -1;
         }
+        move(x);
     }
 }
