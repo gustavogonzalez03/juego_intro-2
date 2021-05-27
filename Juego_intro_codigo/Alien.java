@@ -8,13 +8,18 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Alien extends Actor
 {
+    SimpleTimer shortTimer = new SimpleTimer();
     /**
      * Act - do whatever the Alien wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        /*destroy();*/
+        if (shortTimer.millisElapsed() > 3000)
+        {
+            getWorld().addObject(new EnemyBullet(),getX(),getY());
+            shortTimer.mark();
+        }
     }        
     public void destroy()
     {
