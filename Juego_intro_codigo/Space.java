@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Space extends World
 {
-
+    Counter counter = new Counter();
     /**
      * Constructor for objects of class Space.
      * 
@@ -19,11 +19,19 @@ public class Space extends World
         super(600, 400, 1); 
         set();
     }
+    
+    public Counter getCounter()
+    {
+        return counter;
+    }
+    
     public void set()
     {
         Spacechip spaceship = new Spacechip();
         addObject(spaceship,298,341);
         Alien alien = new Alien();
         addObject(alien,393,95);
+        
+        addObject(counter,65,36); 
     }
 }
