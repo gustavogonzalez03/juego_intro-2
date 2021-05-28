@@ -16,6 +16,7 @@ dependency11.type=UsesDependency
 dependency2.from=Space
 dependency2.to=Alien
 dependency2.type=UsesDependency
+<<<<<<< Updated upstream
 dependency3.from=Space
 dependency3.to=Spacechip
 dependency3.type=UsesDependency
@@ -24,9 +25,19 @@ dependency4.to=Space
 dependency4.type=UsesDependency
 dependency5.from=Bullet
 dependency5.to=Counter
+=======
+dependency3.from=Bullet
+dependency3.to=Alien
+dependency3.type=UsesDependency
+dependency4.from=Alien
+dependency4.to=SimpleTimer
+dependency4.type=UsesDependency
+dependency5.from=Alien
+dependency5.to=EnemyBullet
+>>>>>>> Stashed changes
 dependency5.type=UsesDependency
-dependency6.from=Bullet
-dependency6.to=Alien
+dependency6.from=Alien
+dependency6.to=Bullet
 dependency6.type=UsesDependency
 dependency7.from=Alien
 dependency7.to=SimpleTimer
@@ -34,6 +45,7 @@ dependency7.type=UsesDependency
 dependency8.from=Alien
 dependency8.to=EnemyBullet
 dependency8.type=UsesDependency
+<<<<<<< Updated upstream
 dependency9.from=Alien
 dependency9.to=Bullet
 dependency9.type=UsesDependency
@@ -41,6 +53,12 @@ editor.fx.0.height=737
 editor.fx.0.width=814
 editor.fx.0.x=660
 editor.fx.0.y=25
+=======
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+>>>>>>> Stashed changes
 height=789
 package.numDependencies=11
 package.numTargets=7
@@ -110,5 +128,10 @@ target7.y=0
 version=3.0.0
 width=928
 world.lastInstantiated=Space
+<<<<<<< Updated upstream
 xPosition=283
 yPosition=25
+=======
+xPosition=490
+yPosition=108
+>>>>>>> Stashed changes
