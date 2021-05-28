@@ -29,6 +29,7 @@ public class EnemyBullet extends Actor
         {
             getWorld().removeObject(s);
             getWorld().removeObject(this);
+            Greenfoot.playSound("Explosion+3.wav");
         }
         else if (getY() > 390)
         {

@@ -18,6 +18,7 @@ public class Alien extends Actor
         if (shortTimer.millisElapsed() > 3000)
         {
             getWorld().addObject(new EnemyBullet(),getX(),getY());
+            Greenfoot.playSound("laser-01.wav");
             shortTimer.mark();
         }
     }        
