@@ -42,6 +42,9 @@ public class Bullet extends Actor
             World world;
             world = getWorld();
             world.removeObject(alien);
+            Space space = (Space)world;
+            Counter counter = space.getCounter();
+            counter.addScore();
             world.removeObject(this);   
             Greenfoot.playSound("explosion.wav");
         }                               

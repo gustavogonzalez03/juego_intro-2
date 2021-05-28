@@ -9,6 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Alien extends Actor
 {
     SimpleTimer shortTimer = new SimpleTimer();
+    public static int x = 4;  /*Variable que modifica la velocidad y direccion
+                                del alien*/
     /**
      * Act - do whatever the Alien wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -21,7 +23,18 @@ public class Alien extends Actor
             Greenfoot.playSound("laser-01.wav");
             shortTimer.mark();
         }
+        moving();
     }        
+    
+    public void moving()
+    {
+        if (getX() == 599 || getX() == 0 )
+        {
+        x = x * -1;
+        }
+        move(x);
+    }
+    
     public void destroy()
     {
         Actor bullet;

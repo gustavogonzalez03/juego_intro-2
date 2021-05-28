@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Space extends World
 {
     GreenfootSound myMusic = new GreenfootSound("space1.wav");
+    Counter counter = new Counter(); 
     /**
      * Constructor for objects of class Space.
      * 
@@ -17,17 +18,14 @@ public class Space extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        set();
         prepare();
     }
-
-    public void set()
+    
+    public Counter getCounter()
     {
-        Spacechip spaceship = new Spacechip();
-        addObject(spaceship,298,341);
-        Alien alien = new Alien();
-        addObject(alien,393,95);
+        return counter;
     }
+    
 
     public void act()
     {myMusic.play();
@@ -47,5 +45,10 @@ public class Space extends World
         addObject(alien3,90,91);
         alien2.setLocation(254,56);
         alien2.setLocation(232,52);
+        Spacechip spaceship = new Spacechip();
+        addObject(spaceship,298,341);
+        
+        addObject(counter,65,36); //Agrega el contador en la pantalla
+
     }
 }
