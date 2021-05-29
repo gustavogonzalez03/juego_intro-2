@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Counter
-comment0.text=\n\ Write\ a\ description\ of\ class\ Counter\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Counter\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\n\ \ \ \ En\ esta\ funcion\ se\ crea\ un\ contador\ que\ despliega\ el\ puntaje\ del\ usuario\n
+comment1.text=\r\n\ \ \ \ En\ esta\ funcion\ se\ crea\ un\ contador\ que\ despliega\ el\ puntaje\ del\ usuario\r\n
 comment2.params=
 comment2.target=void\ addScore()
 numComments=3
