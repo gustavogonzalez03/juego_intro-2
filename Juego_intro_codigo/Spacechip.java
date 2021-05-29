@@ -16,7 +16,7 @@ public class Spacechip extends Actor
     {
         moving();       
     }    
-    public void moving()
+    public void moving() //metodo que defne el movimiento de la nave
     {
         if (Greenfoot.isKeyDown("left"))
         {
@@ -31,7 +31,7 @@ public class Spacechip extends Actor
             shoot();
         }
     }
-    public void shoot()
+    public void shoot() //,etodo que hace que la nave dispare
     {               
         new Bullet();
         Bullet bullet = new Bullet();

@@ -1,10 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Counter here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ Aqui se crea el diplay y el contador encargados de llevar el puntaje
  */
 public class Counter extends Actor
 {

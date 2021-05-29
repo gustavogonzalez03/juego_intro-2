@@ -22,7 +22,7 @@ public class Bullet extends Actor
     {
         setLocation(getX(),getY()-3);        
     }
-    public void destroy()
+    public void destroy() 
     {
         if (getY() == 0)
         {
@@ -33,7 +33,7 @@ public class Bullet extends Actor
             kill();
         }
     }
-    public void kill()
+    public void kill() //al momento que la bala toca el alien destruye ambos objetos y se agrega al contador
     {        
         Actor alien;
         alien = getOneObjectAtOffset(0,0,Alien.class);

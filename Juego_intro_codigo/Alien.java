@@ -15,7 +15,7 @@ public class Alien extends Actor
      * Act - do whatever the Alien wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act() 
+    public void act() //metodo que hace que los aliens disparen
     {
         if (shortTimer.millisElapsed() > 3000)
         {
@@ -26,7 +26,7 @@ public class Alien extends Actor
         moving();
     }        
     
-    public void moving()
+    public void moving() //metodo que hace que los aliens se muevan a los lados
     {
         if (getX() == 599 || getX() == 0 )
         {
@@ -35,7 +35,7 @@ public class Alien extends Actor
         move(x);
     }
     
-    public void destroy()
+    public void destroy()//metodo que destruye a los aliens al ser tocados por una bala
     {
         Actor bullet;
         bullet = getOneObjectAtOffset(0,0,Bullet.class);

@@ -28,14 +28,15 @@ public class EnemyBullet extends Actor
         if (s != null)
         {
             getWorld().removeObject(s);
-            getWorld().removeObject(this);
-            Greenfoot.playSound("Explosion+3.wav");
+            Greenfoot.setWorld(new EndGameScreen()); //llama metodo que muestra la pantalla game over
+            getWorld().removeObject(this); //remueve la bala enemiga
+            Greenfoot.playSound("Explosion+3.wav");//sonido
         }
         else if (getY() > 390)
         {
             getWorld().removeObject(this);
             Greenfoot.delay(10);
-            Greenfoot.setWorld(new EndGameScreen());
+            
         }
     }    
 }
